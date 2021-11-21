@@ -1,4 +1,4 @@
-19583609662376222
+19595045385165241
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -84622,3 +84622,52 @@ waffle
 0
 0
 0
+keyboard_reversible
+ComboDiode
+Reversible diode footprint
+reversible diode
+0
+6
+2
+keyboard_reversible
+PJ-320A
+Solder-jumper reversible TRRS Socket
+
+0
+18
+4
+keyboard_reversible
+ProMicro
+Solder-jumper reversible Pro Micro footprint
+promicro ProMicro reversible solder jumper
+0
+242
+24
+keyboard_reversible
+ProMicro_expanded
+Solder-jumper reversible Pro Micro footprint (exposed jumpers)
+promicro ProMicro reversible solder jumper
+0
+242
+24
+keyboard_reversible
+ProMicro_expanded_unrouted
+Solder-jumper reversible Pro Micro footprint (exposed jumpers, unrouted)
+promicro ProMicro reversible solder jumper
+0
+170
+24
+keyboard_reversible
+ProMicro_independent
+Solder-jumper reversible Pro Micro footprint (independent sides)
+promicro ProMicro reversible solder jumper
+0
+170
+48
+keyboard_reversible
+ProMicro_unrouted
+Solder-jumper reversible Pro Micro footprint (unrouted)
+promicro ProMicro reversible solder jumper
+0
+170
+24
