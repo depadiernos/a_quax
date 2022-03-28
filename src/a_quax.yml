@@ -8,7 +8,7 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 50, 19, 0]
+              bind: [0, 57, 22, 0]
               column_net: P2
             home:
               bind: [0, 10, 0, 0]
@@ -69,7 +69,7 @@ points:
           origin: [0, -17]
           rows: 
             bottom:
-              bind: [5, 0, 19, 0]
+              bind: [5, 0, 17, 0]
               column_net: P6
             home:
               bind: [0, 0, 0, 5]
@@ -184,10 +184,10 @@ pcbs:
         outline: panel
     footprints:
       promicro:
-        type: xiao
+        type: promicro
         anchor:
           ref: matrix_pinky_bottom
-          shift: [2, -18]
+          shift: [12, -15]
           rotate: 90
         params:
           orientation: down
@@ -195,7 +195,7 @@ pcbs:
         type: slider
         anchor:
           ref: matrix_pinky_bottom
-          shift: [30, -26]
+          shift: [45, -28]
           rotate: 180
         nets:
           from: RAW
@@ -206,7 +206,7 @@ pcbs:
         type: jstph
         anchor:
           ref: matrix_pinky_bottom
-          shift: [18, -5]
+          shift: [16, -27]
           rotate: 90
         nets:
           pos: RAWER
