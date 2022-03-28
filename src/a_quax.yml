@@ -1,0 +1,215 @@
+points:
+  zones:
+    matrix:
+      columns:
+        pinky:
+          spread: 18
+          rotate: 12
+          origin: [0, -17]
+          rows:
+            bottom:
+              bind: [0, 50, 19, 0]
+              column_net: P2
+            home:
+              bind: [0, 10, 0, 0]
+              column_net: P2
+            top:
+              bind: [0, 10, 0, 0]
+              column_net: P2 
+        ring:
+          spread: 18
+          stagger: 12
+          rotate: -7
+          origin: [0, -17]
+          rows:
+            bottom:
+              bind: [0, 0, 2, 0]
+              column_net: P3
+            home:
+              bind: [0, 0, 0, 0]
+              column_net: P3
+            top:
+              bind: [0, 10, 0, 0]
+              column_net: P3
+        middle:
+          spread: 18
+          stagger: 17/3
+          rotate: -5
+          origin: [0, -17]
+          rows:
+            bottom:
+              bind: [0, 10, 0, 5]
+              column_net: P4
+            home:
+              bind: 5
+              column_net: P4           
+            top:
+              bind: [0, 0, 0, 0]
+              column_net: P4
+          key:
+            shift: [0.2, 0]
+        index:
+          spread: 18
+          stagger: -17/3
+          rotate: 0
+          origin: [0, -17]
+          rows:
+            bottom:
+              bind: [0, 5, 24, 0]
+              column_net: P5
+            home:
+              bind: [5, 0, 5, 0]
+              column_net: P5
+            top:
+              bind: [0, 0, 0, 6]
+              column_net: P5
+        inner:
+          spread: 18
+          stagger: -17/6
+          origin: [0, -17]
+          rows: 
+            bottom:
+              bind: [5, 0, 19, 0]
+              column_net: P6
+            home:
+              bind: [0, 0, 0, 5]
+              column_net: P6
+            top:
+              bind: [0, 0, 5, 5]
+              column_net: P6
+      key:
+        footprints:
+          choc:
+            type: choc
+            anchor:
+              rotate: 180
+            nets:
+              from: =colrow
+              to: =column_net
+            params:
+                keycaps: true
+                reverse: true
+          diode:
+            type: diode
+            nets:
+              from: =colrow
+              to: =row_net
+            anchor:
+              shift: [0,5]
+              rotate: 0
+            params:
+                through_hole: false
+      rows: 
+        bottom:
+          padding: 17
+          row_net: P7
+        home:
+          padding: 17
+          row_net: P8          
+        top:
+          row_net: P9  
+    thumb:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-18,-18]
+      columns:
+        first:
+          rotate: -8
+          rows:
+            only:
+              column_net: P5
+              bind: [0, 5, 0, 0]
+        second:
+          spread: 18
+          rotate: -10
+          origin: [-9, -9.5]
+          rows:
+            only:
+              column_net: P6
+              bind: [0, 0, 0, 5]
+      rows:
+        only:
+          padding: 17
+          row_net: P10
+
+      key:
+        footprints:
+          choc:
+            type: choc
+            anchor:
+              rotate: 180
+            nets:
+              from: =colrow
+              to: =column_net
+            params:
+                keycaps: true
+                reverse: true
+          diode:
+            type: diode
+            nets:
+              from: =colrow
+              to: =row_net
+            anchor:
+              shift: [0,5]
+              rotate: 0
+            params:
+              through_hole: false
+outlines:
+  exports:
+    raw:
+      - type: keys
+        side: left
+        size: [18,18]
+        corner: 1
+    first:
+      - type: outline
+        name: raw
+        fillet: 1
+    second:
+      - type: outline
+        name: first
+        fillet: 2
+    third:
+      - type: outline
+        name: second
+        fillet: 1   
+    panel:
+      - type: outline
+        name: third
+        fillet: 1
+pcbs:
+  a_quax:
+    outlines:
+      main:
+        outline: panel
+    footprints:
+      promicro:
+        type: xiao
+        anchor:
+          ref: matrix_pinky_bottom
+          shift: [2, -18]
+          rotate: 90
+        params:
+          orientation: down
+      slider:
+        type: slider
+        anchor:
+          ref: matrix_pinky_bottom
+          shift: [30, -26]
+          rotate: 180
+        nets:
+          from: RAW
+          to: RAWER
+        params:
+          side: B
+      battery:
+        type: jstph
+        anchor:
+          ref: matrix_pinky_bottom
+          shift: [18, -5]
+          rotate: 90
+        nets:
+          pos: RAWER
+          neg: GND
+        params:
+          side: B
