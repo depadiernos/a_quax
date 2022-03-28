@@ -1,4 +1,4 @@
-# a_quax_quax
+# a_qua
 
 inspired by the A Dux and minidox.
 
