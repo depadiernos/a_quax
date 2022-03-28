@@ -11,7 +11,7 @@ module.exports = {
     },
     body: p => {
       return `
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         ${p.at /* parametric position */}
         (attr through_hole) 
         (fp_text reference "${p.ref}" (at 0 0 ${p.rot}) (layer "F.SilkS") ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 

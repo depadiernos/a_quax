@@ -30,7 +30,7 @@ module.exports = {
     },
     body: p => {
       const standard = `
-        (footprint "xiao-ble-tht" (layer "F.Cu") (tedit 61D90095) 
+        (footprint "xiao-ble" (layer "F.Cu") (tedit 61D90095) 
         ${p.at /* parametric position */} 
         (attr smd exclude_from_pos_files) 
         (fp_text reference "${p.ref}" (at -19.3989 -11.28268 ${p.rot}) (layer "F.SilkS") ${p.ref_hide} (effects (font (size 0.889 0.889) (thickness 0.1016))) (tstamp 1c479411-a194-4685-8eeb-e81966c16c7f)) 

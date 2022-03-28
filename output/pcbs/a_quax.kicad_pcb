@@ -225,7 +225,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 13.4259428 -4.5192472 12)
         (attr through_hole) 
         (fp_text reference "D1" (at 0 0 12) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -297,7 +297,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 9.891444 -21.1477564 12)
         (attr through_hole) 
         (fp_text reference "D2" (at 0 0 12) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -369,7 +369,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 6.3569453 -37.7762656 12)
         (attr through_hole) 
         (fp_text reference "D3" (at 0 0 12) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -441,7 +441,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 31.1942902 -20.396465 5)
         (attr through_hole) 
         (fp_text reference "D4" (at 0 0 5) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -513,7 +513,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 29.7126425 -37.3317749 5)
         (attr through_hole) 
         (fp_text reference "D5" (at 0 0 5) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -585,7 +585,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 28.230995 -54.2670848 5)
         (attr through_hole) 
         (fp_text reference "D6" (at 0 0 5) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -657,7 +657,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 50.7493385 -27.6940883 0)
         (attr through_hole) 
         (fp_text reference "D7" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -729,7 +729,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 50.7493386 -44.6940883 0)
         (attr through_hole) 
         (fp_text reference "D8" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -801,7 +801,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 50.7493386 -61.6940884 0)
         (attr through_hole) 
         (fp_text reference "D9" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -873,7 +873,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 68.5493385 -22.0274216 0)
         (attr through_hole) 
         (fp_text reference "D10" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -945,7 +945,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 68.5493385 -39.0274216 0)
         (attr through_hole) 
         (fp_text reference "D11" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1017,7 +1017,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 68.5493386 -56.0274217 0)
         (attr through_hole) 
         (fp_text reference "D12" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1089,7 +1089,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 86.5493385 -19.1940883 0)
         (attr through_hole) 
         (fp_text reference "D13" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1161,7 +1161,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 86.5493385 -36.1940884 0)
         (attr through_hole) 
         (fp_text reference "D14" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1233,7 +1233,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 86.5493385 -53.1940883 0)
         (attr through_hole) 
         (fp_text reference "D15" (at 0 0 0) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1305,7 +1305,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 69.245204 -1.1454286000000007 -8)
         (attr through_hole) 
         (fp_text reference "D16" (at 0 0 -8) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1377,7 +1377,7 @@
           )
         
 
-        (footprint "ComboDiode" (layer "F.Cu") (tedit 5B24D78E)  
+        (footprint "diode" (layer "F.Cu") (tedit 5B24D78E)  
         (at 89.1798617 3.4568497000000002 -18)
         (attr through_hole) 
         (fp_text reference "D17" (at 0 0 -18) (layer "F.SilkS") hide (effects (font (size 1.27 1.27) (thickness 0.15))) (tstamp d3531ad3-ea7d-429d-956e-ff3da633d95c)) 
@@ -1406,7 +1406,7 @@
       
 
         
-        (footprint "xiao-ble-tht" (layer "F.Cu") (tedit 61D90095) 
+        (footprint "xiao-ble" (layer "F.Cu") (tedit 61D90095) 
         (at 20.1642069 17.5623242 102) 
         (attr smd exclude_from_pos_files) 
         (fp_text reference "MCU1" (at -19.3989 -11.28268 102) (layer "F.SilkS") hide (effects (font (size 0.889 0.889) (thickness 0.1016))) (tstamp 1c479411-a194-4685-8eeb-e81966c16c7f)) 
