@@ -30,7 +30,7 @@ module.exports = {
     },
     body: p => {
       const standard = `
-        (footprint "xiao-ble" (layer "F.Cu") (tedit 61D90095) 
+        footprint "xiao-ble" (layer "F.Cu") (tedit 61D90095) 
         ${p.at /* parametric position */} 
         (attr smd exclude_from_pos_files) 
         (fp_text reference "${p.ref}" (at -19.3989 -11.28268 ${p.rot}) (layer "F.SilkS") ${p.ref_hide} (effects (font (size 0.889 0.889) (thickness 0.1016))) (tstamp 1c479411-a194-4685-8eeb-e81966c16c7f)) 
@@ -54,8 +54,6 @@ module.exports = {
         (pad 7 thru_hole oval (at ${def_neg}7.62 7.62 ${p.rot}) (size 2.75 1.8) (drill 1 (offset ${def_neg}0.475 0)) (layers *.Cu *.Mask) (tstamp a20b891b-a240-411f-9914-9ac989f03074) ${p.net.P7.str}) 
         (pad 8 thru_hole circle (at ${def_neg}1.27 -8.572 ${90 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp b370e60c-b738-4596-b4de-5ade258f269e) ${p.net.CLK.str}) 
         (pad 9 thru_hole circle (at ${def_neg}1.27 -6.032 ${90 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp 0a24ded2-bf71-4e3b-b256-1f46996c2720) ${p.net.GND.str}) 
-        (pad 10 thru_hole circle (at ${def_neg}3.81 9.208 ${180 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp faaa6cbd-5b1e-4809-af1e-d670ea3421a9) ${p.net.NFC0.str}) 
-        (pad 11 thru_hole circle (at ${def_neg}5.715 9.208 ${180 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp 10b1ec97-e390-4fc6-b0ba-a83b18234dcb) ${p.net.NFC1.str})
         
         ${p.at /* Reset button Side */ }
         (pad 12 thru_hole oval (at ${def_pos}7.62 7.62 ${180 + p.rot}) (size 2.75 1.8) (drill 1 (offset ${def_neg}0.475 0)) (layers *.Cu *.Mask) (tstamp 9c4384c0-9a57-4262-8711-eec9b8ecb4c6) ${p.net.P6.str}) 
@@ -70,18 +68,21 @@ module.exports = {
         
         ${p.at /* Battery Pins */ }
         (pad 21 thru_hole circle (at ${def_pos}4.445 -0.317 ${180 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp 79509df8-dd6d-474b-bcaa-263daec27871) ${p.net.RAW.str}) 
-        (pad 22 thru_hole circle (at ${def_pos}4.445 -2.222 ${180 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp 4a564fab-879b-49c4-b927-6f8f249dc7f0) ${p.net.GND.str}) )
+        (pad 22 thru_hole circle (at ${def_pos}4.445 -2.222 ${180 + p.rot}) (size 1.397 1.397) (drill 1.016) (layers *.Cu *.Mask) (tstamp 4a564fab-879b-49c4-b927-6f8f249dc7f0) ${p.net.GND.str}) 
+        
         `
       }
       if (p.param.orientation == 'up') {
-        return `
+        return `(
         ${standard}
         ${pins('-', '')}
+        )
         `
       } else {
-        return `
+        return `(
         ${standard}
         ${pins('', '-')}
+        )
         `        
       }
     }

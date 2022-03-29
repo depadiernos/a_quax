@@ -8,7 +8,7 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 57, 22, 0]
+              bind: [0, 0, 0, 0]
               column_net: P2
             home:
               bind: [0, 10, 0, 0]
@@ -23,7 +23,7 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 0, 2, 0]
+              bind: [0, 0, 0, 5]
               column_net: P3
             home:
               bind: [0, 0, 0, 0]
@@ -38,7 +38,7 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 10, 0, 5]
+              bind: [0, 5, 0, 5]
               column_net: P4
             home:
               bind: 5
@@ -55,13 +55,13 @@ points:
           origin: [0, -17]
           rows:
             bottom:
-              bind: [0, 5, 24, 0]
+              bind: [0, 5, 10, 0]
               column_net: P5
             home:
               bind: [5, 0, 5, 0]
               column_net: P5
             top:
-              bind: [0, 0, 0, 6]
+              bind: [5.68, 0, 0, 6]
               column_net: P5
         inner:
           spread: 18
@@ -69,13 +69,13 @@ points:
           origin: [0, -17]
           rows: 
             bottom:
-              bind: [5, 0, 17, 0]
+              bind: [5, 2, 10, 0]
               column_net: P6
             home:
-              bind: [0, 0, 0, 5]
+              bind: [0, 2, 0, 2]
               column_net: P6
             top:
-              bind: [0, 0, 5, 5]
+              bind: [22, 2, 5, 2]
               column_net: P6
       key:
         footprints:
@@ -118,7 +118,7 @@ points:
           rows:
             only:
               column_net: P5
-              bind: [0, 5, 0, 0]
+              bind: [10, 5, 0, 38]
         second:
           spread: 18
           rotate: -10
@@ -184,19 +184,19 @@ pcbs:
         outline: panel
     footprints:
       promicro:
-        type: promicro
+        type: xiao
         anchor:
-          ref: matrix_pinky_bottom
-          shift: [12, -15]
-          rotate: 90
+          ref: matrix_inner_top
+          shift: [0, 20]
+          rotate: -90
         params:
           orientation: down
       slider:
         type: slider
         anchor:
-          ref: matrix_pinky_bottom
-          shift: [45, -28]
-          rotate: 180
+          ref: matrix_inner_bottom
+          shift: [9, -12]
+          rotate: -90
         nets:
           from: RAW
           to: RAWER
@@ -205,9 +205,9 @@ pcbs:
       battery:
         type: jstph
         anchor:
-          ref: matrix_pinky_bottom
-          shift: [16, -27]
-          rotate: 90
+          ref: matrix_middle_bottom
+          shift: [7, -12]
+          rotate: -90
         nets:
           pos: RAWER
           neg: GND
